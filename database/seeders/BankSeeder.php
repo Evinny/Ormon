@@ -20,6 +20,7 @@ class BankSeeder extends Seeder
                 'user_id' => 1,
                 'debit_card' => true,
                 'credit_card' => false,
+                'is_broker' => true,
             ],
 
             'C6 Bank' => [

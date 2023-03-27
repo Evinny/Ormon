@@ -40,6 +40,12 @@
                 top: 18px;
             }
 
+            .top-left {
+                position: absolute;
+                left: 10px;
+                top: 18px;
+            }
+
             .content {
                 text-align: center;
             }
@@ -58,6 +64,16 @@
                 text-transform: uppercase;
             }
 
+            .TopButton > a{
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -66,16 +82,15 @@
     <body>
         <div class="flex-center position-ref full-height">
             
+            <div class="top-left TopButton">
+           <a href={{route('home.page')}}>Voltar</a>
+            </div>
+
             <div class="top-right links">
                 @auth
-                    <a href=''>Home</a>
-                    <a href="">Sair</a>
+                    
                 @else
-                    <a href="">Login</a>
-
-                    
-                    <a href="">Cadastrar</a>
-                    
+                   
                 @endauth
             </div>
             
